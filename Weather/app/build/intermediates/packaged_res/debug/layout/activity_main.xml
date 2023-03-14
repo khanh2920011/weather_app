@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:hint="Thanh pho"
+            android:id="@+id/edttimkiem"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bttimkiem"
+            android:layout_marginLeft="5dp"
+            android:text="Tim Kiem"/>
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtthanhpho"
+            android:text="Ten thanh pho"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdatnuoc"
+            android:text="Ten dat nuoc"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgv" />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Nhiet do"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:id="@+id/txtnhietdo"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Trang thai"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:id="@+id/txttrangthai"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+            <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/doam"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtdoam"
+                    android:textSize="20dp"
+                    android:text="Do am"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cloud" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtmay"
+                    android:textSize="20dp"
+                    android:text="May"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/wind"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtgio"
+                    android:textSize="20dp"
+                    android:text="Gio"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/txtngay"
+        android:text="Ngay cap nhat"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btxemngaytieptheo"
+        android:text="Cac ngay tiep theo"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"/>
+</LinearLayout>
