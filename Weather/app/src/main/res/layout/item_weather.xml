@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngay hien thi "
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/txtngay"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Trang thai "
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:id="@+id/txttrangthai"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_weight="33"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icontest"
+            android:id="@+id/imgicon"/>
+        <TextView
+            android:layout_weight="33"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:id="@+id/txtmin"
+            android:textSize="12dp"
+            android:text="Max"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_weight="33"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:id="@+id/txtmax"
+            android:textSize="12dp"
+            android:text="Min"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
